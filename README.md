@@ -1,8 +1,19 @@
 
-## Install dependencies
+## Setting up
+
+Install dependencies
 
 ``` bash
 bun install
+```
+
+Create `.env` file 
+
+```
+SHARETRIBE_INTEGRATION_SDK_CLIENT_ID=<client-id>
+SHARETRIBE_INTEGRATION_SDK_CLIENT_SECRET=<client-secret>
+```
+
 ```
 
 ## How to use
