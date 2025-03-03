@@ -1,5 +1,5 @@
-require('dotenv').config();
 const sharetribeIntegrationSdk = require('sharetribe-flex-integration-sdk');
+require('dotenv').config();
 
 const integrationSdk = sharetribeIntegrationSdk.createInstance({
   clientId: process.env.SHARETRIBE_INTEGRATION_SDK_CLIENT_ID,
