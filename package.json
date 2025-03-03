@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "sharetribe-flex-integration-sdk": "^1.11.0"
+  },
+  "scripts": {
+    "start": "bun run index.js"
+  }
+}
