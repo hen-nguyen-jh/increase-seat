@@ -8,6 +8,7 @@ const integrationSdk = sharetribeIntegrationSdk.createInstance({
 
 //id is first param
 const listingId = process.argv[2];
+const newTotal = process.argv[3] || 1;
 
 if (!listingId) {
   console.error('ERROR - id is required');
@@ -17,7 +18,7 @@ if (!listingId) {
 integrationSdk.stock.compareAndSet({
   listingId,
   oldTotal: 0,
-  newTotal: 1,
+  newTotal,
 }).then((response) => {
   console.log('Success');
   console.log('---');
